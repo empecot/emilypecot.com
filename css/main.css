@@ -1,0 +1,344 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*====================COLORS======================
+Mustard Yellow: #e3cb68;
+White: #fefbf7;
+Bright Pink: #f55649;
+Black: #2b2b2b;
+Light Grey: #7f7f7f;
+Turquoise: #339999;
+====================COLORS======================*/
+
+/***** BASE STYLES--MOBILE FIRST--MIN WIDTH 400PX *****/
+
+body, html {
+		font-family: 'Athelas', sans-serif;	
+		color: #7f7f7f;
+		font-size: 16px;
+		background-color: #fefbf7;
+	}
+a {
+    text-decoration: none;
+ }
+a:hover {
+    color: #f55649;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.4;
+}  
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/************MOBILE*************/
+@media (max-width: 600px) {
+/***** HEADER *****/
+
+.alt-tagline {
+	display: none;
+}
+.mobile-tagline {
+	display: inline-block;
+}
+.main-header {
+	background: url('../img/mobile-coverpic.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 34em;
+}
+	.main-header h1 { 
+		font-family: 'Palatino', sans-serif;
+	    font-size: 2.3em;
+	    color: #e3cb68;
+	    margin: 0em 0 -0.5em .1em;
+	    padding: .8em 0 0 .313em;
+	}
+
+	.main-header h2 {
+		color: #fefbf7;
+		font-family: 'Palatino', sans-serif;
+		margin: 1.7em 0 0 3em;
+		}
+			.main-header h2 span {
+			    color: #f55649;
+		}
+
+			nav img {
+				width: 2.5em;
+			    height: auto;
+			    float: right;
+			    margin-right: 1em;
+			    margin-top: -1.4em;
+			}
+			.main-nav {
+				display: none;
+			}
+
+/***** ABOUT *****/
+#mobile-about {
+	padding: 0 .7em 0 .9em;
+}
+	#mobile-about h2 {
+		font-size: 2em;
+		margin: .5em 0;
+	}
+
+/***** WORK *****/
+.skills {
+	width: 100%;
+	height: auto;
+}
+		#work p {
+			display: none;
+		}
+		#html-icon {
+			margin-top: -12px;
+		}
+		#pencil-icon {
+			margin-top: 6px;
+		}
+		#work {
+			background-color: #e3cb68;
+			text-align: center;
+			padding-top: 60px;
+			margin-top: 2em;
+		}
+			#work h3, h4 {
+				font-size: 1.5em;
+				color: #339999;
+			}
+				#work h3 {
+				    width: 175px;
+				    margin: 0 0 1em 4em;
+				}
+				
+				#work h4 {
+				    margin-bottom: 50px;
+				    text-decoration: underline;
+				    padding: 20px 0 40px 0;
+				}
+
+				#work img {
+					width: 20%;
+					height: auto;
+					margin-bottom: .5em;
+				}
+				#work a:hover {
+					color: #f55649;
+				}
+
+/***** CONTACT *****/
+#contact {
+	width: 100%;
+	height: auto;
+	background-color: #D3D3D3;
+	margin-top: -4em;
+	color: #fefbf7;
+	background: url('../img/paneling-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 2em;
+    border-top: solid 1.5px #f55649;
+}
+		#contact h2 {
+		    font-family: 'Palatino', sans-serif;
+		    font-size: 2.3em;
+		    padding: .4em 0 0 .6em;
+		    margin-bottom: -.5em;
+		}
+				#contact h2 span {
+					color: #f55649;
+					padding-left: 2px;
+				}
+		#contact h3 {
+			font-family: 'Athelas', sans-serif;	
+			padding: 0em 0 0 1.6em;
+		}
+
+
+#contact label {
+	color: #fefbf7;
+	text-transform: uppercase;
+}		
+
+.inputs {
+	margin-left: 1.5em;
+}
+		input, textarea {
+		    height: 2em;
+    		width: 90%;
+    		border: inset 1.9px #f55649;
+    		margin-bottom: 1em;
+    		display: block;
+		}
+			textarea {
+				height: 10em;
+			}
+
+}
+/*#info {
+	width: 100%;
+	height: 8em;
+	background-color: #e3cb68;
+	border-top: solid 1.5px #f55649;
+	font-size: 1em;
+	margin-bottom: 0;
+}
+	#info h5 {
+		color: #f55649;
+		font-family: 'Palatino', serif;
+		font-size: 1.5em;	
+		margin-left: 4.5em;
+	}*/
+
+
+
+/*nav {
+	width: 100%;
+}
+	  nav ul {
+        list-style: none;
+    }
+		nav ul li{
+		    text-align: center;
+		    height: 3em;
+            padding-top: 1em;   
+		}
+		nav ul li a {
+		    font-size: .9em;
+		    color: #fefbf7;   
+		}
+            nav ul li a:hover{
+                color: #f55649;
+            }*/
+
+/*/************DESKTOP*************/
+
+/*.mobile-tagline {
+	display: none;
+}
+.alt-tagline {
+	display: inline;
+}
+.hamburger {
+	display: none;
+}
+.main-nav {
+	display: inline;
+
+}
+*/
+
+/*/************TABLET*************/
+
+/*@media (max-width: 1024px) {
+.mobile-tagline {
+	display: none;
+}
+.alt-tagline {
+	display: inline-block;
+}
+.hamburger {
+	display: none;
+}
+.main-nav {
+	display: inline;
+}
+}*/
